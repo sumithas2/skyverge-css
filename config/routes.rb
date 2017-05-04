@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get '/connect', to: 'pages#connect'
   get '/dayinlife', to: 'pages#dayinlife'
 
-  root :to => 'home#index'
+  #root :to => 'home#index'
+ root :to => 'pages#about'
 
 end
