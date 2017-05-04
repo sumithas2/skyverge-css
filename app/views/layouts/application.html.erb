@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>MyPortfolio</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
-</html>
+<%= render "partials/header" %>  
+<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content"> 
+				<%= yield %> 	<!-- Main View -->
+					<div style="clear: both;">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+</div>
+<%= render "partials/sidebar" %>  
+<div id="footer">
+		<p>Designed & Developed by Sumitha </p>
+</div>
